@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */; };
+		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
+		65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6B2EB3D8B2003EB629 /* ContentView.swift */; };
+		65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		65F13E572EB3D8A7003EB629 /* InvestHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F13E6B2EB3D8B2003EB629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestHelperApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		65F13E592EB3D8A7003EB629 /* InvestHelper */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InvestHelper;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		65F13E542EB3D8A7003EB629 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		65F13E4E2EB3D8A7003EB629 = {
 			isa = PBXGroup;
 			children = (
-				65F13E592EB3D8A7003EB629 /* InvestHelper */,
+				65F13E6D2EB3D8B2003EB629 /* InvestHelper */,
 				65F13E582EB3D8A7003EB629 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				65F13E572EB3D8A7003EB629 /* InvestHelper.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		65F13E692EB3D8B2003EB629 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65F13E6D2EB3D8B2003EB629 /* InvestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E692EB3D8B2003EB629 /* Preview Content */,
+				65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */,
+				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
+				65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */,
+			);
+			path = InvestHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				65F13E592EB3D8A7003EB629 /* InvestHelper */,
 			);
 			name = InvestHelper;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */,
+				65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */,
+				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
