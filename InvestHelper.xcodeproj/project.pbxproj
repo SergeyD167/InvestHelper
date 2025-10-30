@@ -11,6 +11,14 @@
 		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
 		65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6B2EB3D8B2003EB629 /* ContentView.swift */; };
 		65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */; };
+		65F13E772EB3DB9E003EB629 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E762EB3DB9E003EB629 /* Localizable.strings */; };
+		65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E782EB3DBD9003EB629 /* Keys.swift */; };
+		65F13E812EB3DC37003EB629 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E802EB3DC37003EB629 /* Router.swift */; };
+		65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E822EB3DE1B003EB629 /* RouterView.swift */; };
+		65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E842EB3DE2C003EB629 /* AppRoute.swift */; };
+		65F13E892EB3E045003EB629 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E882EB3E045003EB629 /* PortfolioView.swift */; };
+		65F13E8C2EB3E299003EB629 /* TriggersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8B2EB3E299003EB629 /* TriggersView.swift */; };
+		65F13E8E2EB3E2C6003EB629 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65F13E6B2EB3D8B2003EB629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestHelperApp.swift; sourceTree = "<group>"; };
+		65F13E742EB3DB9E003EB629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65F13E752EB3DB9E003EB629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65F13E782EB3DBD9003EB629 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		65F13E802EB3DC37003EB629 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		65F13E822EB3DE1B003EB629 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		65F13E842EB3DE2C003EB629 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		65F13E882EB3E045003EB629 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		65F13E8B2EB3E299003EB629 /* TriggersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersView.swift; sourceTree = "<group>"; };
+		65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +76,100 @@
 		65F13E6D2EB3D8B2003EB629 /* InvestHelper */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E692EB3D8B2003EB629 /* Preview Content */,
-				65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */,
-				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
 				65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */,
+				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
+				65F13E7F2EB3DC13003EB629 /* Views */,
+				65F13E7C2EB3DC05003EB629 /* ViewModel */,
+				65F13E7B2EB3DBFF003EB629 /* Models */,
+				65F13E7A2EB3DBED003EB629 /* Services */,
+				65F13E722EB3DB80003EB629 /* Resources */,
+				65F13E692EB3D8B2003EB629 /* Preview Content */,
 			);
 			path = InvestHelper;
+			sourceTree = "<group>";
+		};
+		65F13E722EB3DB80003EB629 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E732EB3DB91003EB629 /* Localizable */,
+				65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */,
+				65F13E782EB3DBD9003EB629 /* Keys.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		65F13E732EB3DB91003EB629 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E762EB3DB9E003EB629 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		65F13E7A2EB3DBED003EB629 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E862EB3DF92003EB629 /* Routing  */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		65F13E7B2EB3DBFF003EB629 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65F13E7C2EB3DC05003EB629 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		65F13E7F2EB3DC13003EB629 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E872EB3E00E003EB629 /* PortfolioViews */,
+				65F13E8A2EB3E287003EB629 /* TriggersViews */,
+				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65F13E862EB3DF92003EB629 /* Routing  */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E802EB3DC37003EB629 /* Router.swift */,
+				65F13E842EB3DE2C003EB629 /* AppRoute.swift */,
+				65F13E822EB3DE1B003EB629 /* RouterView.swift */,
+			);
+			path = "Routing ";
+			sourceTree = "<group>";
+		};
+		65F13E872EB3E00E003EB629 /* PortfolioViews */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E882EB3E045003EB629 /* PortfolioView.swift */,
+			);
+			path = PortfolioViews;
+			sourceTree = "<group>";
+		};
+		65F13E8A2EB3E287003EB629 /* TriggersViews */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E8B2EB3E299003EB629 /* TriggersView.swift */,
+			);
+			path = TriggersViews;
+			sourceTree = "<group>";
+		};
+		65F13E8F2EB3E2CA003EB629 /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */,
+			);
+			path = SettingsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */,
+				65F13E772EB3DB9E003EB629 /* Localizable.strings in Resources */,
 				65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,12 +246,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F13E812EB3DC37003EB629 /* Router.swift in Sources */,
 				65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */,
+				65F13E892EB3E045003EB629 /* PortfolioView.swift in Sources */,
+				65F13E8E2EB3E2C6003EB629 /* SettingsView.swift in Sources */,
+				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
+				65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */,
+				65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */,
+				65F13E8C2EB3E299003EB629 /* TriggersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65F13E762EB3DB9E003EB629 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F13E742EB3DB9E003EB629 /* Localizable.strings */,
+				65F13E752EB3DB9E003EB629 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		65F13E632EB3D8A8003EB629 /* Debug */ = {
@@ -200,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -257,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -282,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
