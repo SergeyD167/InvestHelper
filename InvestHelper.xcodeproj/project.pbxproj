@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED74572EB6967F00336086 /* TriggersListScreen.swift */; };
 		65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */; };
 		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
 		65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6B2EB3D8B2003EB629 /* ContentView.swift */; };
@@ -16,12 +17,13 @@
 		65F13E812EB3DC37003EB629 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E802EB3DC37003EB629 /* Router.swift */; };
 		65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E822EB3DE1B003EB629 /* RouterView.swift */; };
 		65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E842EB3DE2C003EB629 /* AppRoute.swift */; };
-		65F13E892EB3E045003EB629 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E882EB3E045003EB629 /* PortfolioView.swift */; };
-		65F13E8C2EB3E299003EB629 /* TriggersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8B2EB3E299003EB629 /* TriggersView.swift */; };
-		65F13E8E2EB3E2C6003EB629 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */; };
+		65F13E892EB3E045003EB629 /* PortfolioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E882EB3E045003EB629 /* PortfolioScreen.swift */; };
+		65F13E8C2EB3E299003EB629 /* TriggersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */; };
+		65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65ED74572EB6967F00336086 /* TriggersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersListScreen.swift; sourceTree = "<group>"; };
 		65F13E572EB3D8A7003EB629 /* InvestHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,9 +35,9 @@
 		65F13E802EB3DC37003EB629 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		65F13E822EB3DE1B003EB629 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		65F13E842EB3DE2C003EB629 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
-		65F13E882EB3E045003EB629 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
-		65F13E8B2EB3E299003EB629 /* TriggersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersView.swift; sourceTree = "<group>"; };
-		65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		65F13E882EB3E045003EB629 /* PortfolioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioScreen.swift; sourceTree = "<group>"; };
+		65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersScreen.swift; sourceTree = "<group>"; };
+		65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6506253E2EB3F6F4001C617C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		65ED74562EB6965400336086 /* TriggersListView */ = {
+			isa = PBXGroup;
+			children = (
+				65ED74572EB6967F00336086 /* TriggersListScreen.swift */,
+			);
+			path = TriggersListView;
+			sourceTree = "<group>";
+		};
 		65F13E4E2EB3D8A7003EB629 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +126,7 @@
 		65F13E7A2EB3DBED003EB629 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6506253E2EB3F6F4001C617C /* API */,
 				65F13E862EB3DF92003EB629 /* Routing  */,
 			);
 			path = Services;
@@ -133,6 +151,7 @@
 			children = (
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
 				65F13E8A2EB3E287003EB629 /* TriggersViews */,
+				65ED74562EB6965400336086 /* TriggersListView */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
 			);
 			path = Views;
@@ -151,7 +170,7 @@
 		65F13E872EB3E00E003EB629 /* PortfolioViews */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E882EB3E045003EB629 /* PortfolioView.swift */,
+				65F13E882EB3E045003EB629 /* PortfolioScreen.swift */,
 			);
 			path = PortfolioViews;
 			sourceTree = "<group>";
@@ -159,7 +178,7 @@
 		65F13E8A2EB3E287003EB629 /* TriggersViews */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E8B2EB3E299003EB629 /* TriggersView.swift */,
+				65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */,
 			);
 			path = TriggersViews;
 			sourceTree = "<group>";
@@ -167,7 +186,7 @@
 		65F13E8F2EB3E2CA003EB629 /* SettingsViews */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E8D2EB3E2C6003EB629 /* SettingsView.swift */,
+				65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */,
 			);
 			path = SettingsViews;
 			sourceTree = "<group>";
@@ -215,6 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 65F13E4E2EB3D8A7003EB629;
 			minimizedProjectReferenceProxies = 1;
@@ -248,13 +268,14 @@
 			files = (
 				65F13E812EB3DC37003EB629 /* Router.swift in Sources */,
 				65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */,
-				65F13E892EB3E045003EB629 /* PortfolioView.swift in Sources */,
-				65F13E8E2EB3E2C6003EB629 /* SettingsView.swift in Sources */,
+				65F13E892EB3E045003EB629 /* PortfolioScreen.swift in Sources */,
+				65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */,
 				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
 				65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */,
 				65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */,
-				65F13E8C2EB3E299003EB629 /* TriggersView.swift in Sources */,
+				65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */,
+				65F13E8C2EB3E299003EB629 /* TriggersScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InvestHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = 48ZS6ANM3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InvestHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = 48ZS6ANM3R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

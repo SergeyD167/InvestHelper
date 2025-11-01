@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PortfolioView: View {
+struct PortfolioScreen: View {
     @Environment(Router.self) private var router
 
     var body: some View {

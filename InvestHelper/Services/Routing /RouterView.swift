@@ -13,16 +13,19 @@ struct RouterView: View {
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            PortfolioView()
+            PortfolioScreen()
                 .navigationDestination(for: AppRoute.self) { route in
                     switch route {
                     case .portfolio:
-                        PortfolioView()
+                        PortfolioScreen()
                     case .settings:
-                        SettingsView()
+                        SettingsScreen()
                     case .triggers:
-                        TriggersView()
+                        TriggersScreen()
+                    case .triggersAdd:
+                        TriggersListScreen()
                     }
+                    
                 }
         }
         .environment(router)
