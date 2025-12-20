@@ -10,6 +10,13 @@
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
 		65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3772EF7506F00F75278 /* CryptoToken.swift */; };
 		65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3792EF7508000F75278 /* InvestmentRecord.swift */; };
+		65ECC3822EF753BE00F75278 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3812EF753BC00F75278 /* DataProvider.swift */; };
+		65ECC3852EF7546F00F75278 /* TriggerEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3842EF7546E00F75278 /* TriggerEvaluator.swift */; };
+		65ECC3872EF7548E00F75278 /* TriggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3862EF7548D00F75278 /* TriggerManager.swift */; };
+		65ECC38B2EF7550B00F75278 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC38A2EF7550800F75278 /* DataProviderProtocol.swift */; };
+		65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC38C2EF7556600F75278 /* CryptoManager.swift */; };
+		65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC38E2EF7559800F75278 /* NotificationManager.swift */; };
+		65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3902EF755AD00F75278 /* StorageManager.swift */; };
 		65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED74572EB6967F00336086 /* TriggersListScreen.swift */; };
 		65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */; };
 		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
@@ -29,6 +36,13 @@
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		65ECC3772EF7506F00F75278 /* CryptoToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToken.swift; sourceTree = "<group>"; };
 		65ECC3792EF7508000F75278 /* InvestmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRecord.swift; sourceTree = "<group>"; };
+		65ECC3812EF753BC00F75278 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		65ECC3842EF7546E00F75278 /* TriggerEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerEvaluator.swift; sourceTree = "<group>"; };
+		65ECC3862EF7548D00F75278 /* TriggerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerManager.swift; sourceTree = "<group>"; };
+		65ECC38A2EF7550800F75278 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		65ECC38C2EF7556600F75278 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		65ECC38E2EF7559800F75278 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		65ECC3902EF755AD00F75278 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		65ED74572EB6967F00336086 /* TriggersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersListScreen.swift; sourceTree = "<group>"; };
 		65F13E572EB3D8A7003EB629 /* InvestHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -67,8 +81,22 @@
 		65ECC37C2EF750B800F75278 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				65ECC3902EF755AD00F75278 /* StorageManager.swift */,
+				65ECC38E2EF7559800F75278 /* NotificationManager.swift */,
+				65ECC38C2EF7556600F75278 /* CryptoManager.swift */,
+				65ECC3862EF7548D00F75278 /* TriggerManager.swift */,
+				65ECC3842EF7546E00F75278 /* TriggerEvaluator.swift */,
+				65ECC3812EF753BC00F75278 /* DataProvider.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		65ECC3892EF754F400F75278 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				65ECC38A2EF7550800F75278 /* DataProviderProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		65ED74562EB6965400336086 /* TriggersListView */ = {
@@ -83,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				65F13E6D2EB3D8B2003EB629 /* InvestHelper */,
-				65F13E582EB3D8A7003EB629 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,12 +133,14 @@
 		65F13E6D2EB3D8B2003EB629 /* InvestHelper */ = {
 			isa = PBXGroup;
 			children = (
+				65F13E582EB3D8A7003EB629 /* Products */,
 				65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */,
 				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
 				65F13E7F2EB3DC13003EB629 /* Views */,
 				65F13E7C2EB3DC05003EB629 /* ViewModel */,
 				65F13E7B2EB3DBFF003EB629 /* Models */,
 				65F13E7A2EB3DBED003EB629 /* Services */,
+				65ECC3892EF754F400F75278 /* Protocols */,
 				65F13E722EB3DB80003EB629 /* Resources */,
 				65F13E692EB3D8B2003EB629 /* Preview Content */,
 			);
@@ -289,12 +318,19 @@
 				65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */,
 				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
+				65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */,
+				65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */,
 				65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */,
 				65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */,
 				65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */,
 				65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */,
+				65ECC3822EF753BE00F75278 /* DataProvider.swift in Sources */,
 				65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */,
+				65ECC38B2EF7550B00F75278 /* DataProviderProtocol.swift in Sources */,
 				65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */,
+				65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */,
+				65ECC3852EF7546F00F75278 /* TriggerEvaluator.swift in Sources */,
+				65ECC3872EF7548E00F75278 /* TriggerManager.swift in Sources */,
 				65F13E8C2EB3E299003EB629 /* TriggersScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
