@@ -85,13 +85,13 @@
 		65ECC37C2EF750B800F75278 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				65ECC3972EF7571E00F75278 /* Mock */,
-				65ECC3902EF755AD00F75278 /* StorageManager.swift */,
-				65ECC38E2EF7559800F75278 /* NotificationManager.swift */,
-				65ECC38C2EF7556600F75278 /* CryptoManager.swift */,
 				65ECC3862EF7548D00F75278 /* TriggerManager.swift */,
 				65ECC3842EF7546E00F75278 /* TriggerEvaluator.swift */,
 				65ECC3812EF753BC00F75278 /* DataProvider.swift */,
+				65ECC38C2EF7556600F75278 /* CryptoManager.swift */,
+				65ECC3982EF75C6E00F75278 /* Storage */,
+				65ECC3972EF7571E00F75278 /* Mock */,
+				65ECC3992EF75CA700F75278 /* Notification */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -110,6 +110,22 @@
 				65ECC3952EF756EB00F75278 /* MockDataProvider.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		65ECC3982EF75C6E00F75278 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				65ECC3902EF755AD00F75278 /* StorageManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		65ECC3992EF75CA700F75278 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				65ECC38E2EF7559800F75278 /* NotificationManager.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		65ED74562EB6965400336086 /* TriggersListView */ = {

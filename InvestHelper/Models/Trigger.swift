@@ -13,7 +13,6 @@ struct Trigger: Identifiable, Codable {
 struct TriggerCondition: Codable {
     let type: TriggerConditionType
     let value: Double
-    let days: Int?
 }
 
 
@@ -33,6 +32,4 @@ enum TriggerSignalType: String, Codable {
 enum TriggerConditionType: String, Codable {
     case greaterThan
     case lessThan
-    case trendUpDays
-    case trendDownDays
 }

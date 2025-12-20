@@ -9,12 +9,6 @@ enum TriggerEvaluator {
             return value > trigger.condition.value
         case .lessThan:
             return value < trigger.condition.value
-        case .trendUpDays:
-            return data.isUptrend(source: trigger.source,
-                                   days: trigger.condition.days ?? 1)
-        case .trendDownDays:
-            return data.isDowntrend(source: trigger.source,
-                                     days: trigger.condition.days ?? 1)
         }
     }
 }
