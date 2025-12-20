@@ -17,6 +17,8 @@
 		65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC38C2EF7556600F75278 /* CryptoManager.swift */; };
 		65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC38E2EF7559800F75278 /* NotificationManager.swift */; };
 		65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3902EF755AD00F75278 /* StorageManager.swift */; };
+		65ECC3942EF7565700F75278 /* TriggerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3932EF7565400F75278 /* TriggerListViewModel.swift */; };
+		65ECC3962EF756EC00F75278 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3952EF756EB00F75278 /* MockDataProvider.swift */; };
 		65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED74572EB6967F00336086 /* TriggersListScreen.swift */; };
 		65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */; };
 		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		65ECC38C2EF7556600F75278 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
 		65ECC38E2EF7559800F75278 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		65ECC3902EF755AD00F75278 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		65ECC3932EF7565400F75278 /* TriggerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerListViewModel.swift; sourceTree = "<group>"; };
+		65ECC3952EF756EB00F75278 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
 		65ED74572EB6967F00336086 /* TriggersListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersListScreen.swift; sourceTree = "<group>"; };
 		65F13E572EB3D8A7003EB629 /* InvestHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		65ECC37C2EF750B800F75278 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				65ECC3972EF7571E00F75278 /* Mock */,
 				65ECC3902EF755AD00F75278 /* StorageManager.swift */,
 				65ECC38E2EF7559800F75278 /* NotificationManager.swift */,
 				65ECC38C2EF7556600F75278 /* CryptoManager.swift */,
@@ -97,6 +102,14 @@
 				65ECC38A2EF7550800F75278 /* DataProviderProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		65ECC3972EF7571E00F75278 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				65ECC3952EF756EB00F75278 /* MockDataProvider.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		65ED74562EB6965400336086 /* TriggersListView */ = {
@@ -188,6 +201,7 @@
 		65F13E7C2EB3DC05003EB629 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				65ECC3932EF7565400F75278 /* TriggerListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,7 +332,9 @@
 				65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */,
 				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
+				65ECC3962EF756EC00F75278 /* MockDataProvider.swift in Sources */,
 				65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */,
+				65ECC3942EF7565700F75278 /* TriggerListViewModel.swift in Sources */,
 				65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */,
 				65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */,
 				65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */,
