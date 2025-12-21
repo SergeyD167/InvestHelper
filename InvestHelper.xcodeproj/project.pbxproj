@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
 		65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3772EF7506F00F75278 /* CryptoToken.swift */; };
 		65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3792EF7508000F75278 /* InvestmentRecord.swift */; };
@@ -22,7 +23,6 @@
 		65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED74572EB6967F00336086 /* TriggersListScreen.swift */; };
 		65F13E6E2EB3D8B2003EB629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */; };
 		65F13E6F2EB3D8B2003EB629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */; };
-		65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6B2EB3D8B2003EB629 /* ContentView.swift */; };
 		65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */; };
 		65F13E772EB3DB9E003EB629 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F13E762EB3DB9E003EB629 /* Localizable.strings */; };
 		65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E782EB3DBD9003EB629 /* Keys.swift */; };
@@ -35,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		65ECC3772EF7506F00F75278 /* CryptoToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToken.swift; sourceTree = "<group>"; };
 		65ECC3792EF7508000F75278 /* InvestmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRecord.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		65F13E572EB3D8A7003EB629 /* InvestHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F13E682EB3D8B2003EB629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65F13E6A2EB3D8B2003EB629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65F13E6B2EB3D8B2003EB629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestHelperApp.swift; sourceTree = "<group>"; };
 		65F13E742EB3DB9E003EB629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65F13E752EB3DB9E003EB629 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */,
-				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
+				6544902F2EF89A3E00954EE2 /* AppContainer.swift */,
 				65F13E7F2EB3DC13003EB629 /* Views */,
 				65F13E7C2EB3DC05003EB629 /* ViewModel */,
 				65F13E7B2EB3DBFF003EB629 /* Models */,
@@ -343,8 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F13E812EB3DC37003EB629 /* Router.swift in Sources */,
-				65F13E702EB3D8B2003EB629 /* ContentView.swift in Sources */,
 				65F13E892EB3E045003EB629 /* PortfolioScreen.swift in Sources */,
+				654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */,
 				65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */,
 				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,

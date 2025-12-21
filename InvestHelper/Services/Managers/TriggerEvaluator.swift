@@ -1,4 +1,5 @@
 enum TriggerEvaluator {
+    
     static func evaluate(_ trigger: Trigger, with data: MarketSnapshot) -> Bool {
         guard let value = data.value(for: trigger.source) else {
             return false

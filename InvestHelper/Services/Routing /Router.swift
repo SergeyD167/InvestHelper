@@ -1,12 +1,4 @@
-//
-//  Router.swift
-//  InvestHelper
-//
-//  Created by Сергей Дятлов on 30.10.2025.
-//
-
-import Foundation
-import SwiftUI
+import Observation
 
 @Observable
 final class Router {

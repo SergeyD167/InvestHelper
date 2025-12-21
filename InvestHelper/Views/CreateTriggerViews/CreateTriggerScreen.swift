@@ -23,5 +23,5 @@ struct CreateTriggerScreen: View {
 }
 
 #Preview {
-    ContentView()
+    RouterView(router: Router())
 }

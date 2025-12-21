@@ -38,5 +38,5 @@ struct TriggersListScreen: View {
 }
 
 #Preview {
-    ContentView()
+    RouterView(router: Router())
 }

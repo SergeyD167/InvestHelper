@@ -21,5 +21,5 @@ struct SettingsScreen: View {
 }
 
 #Preview {
-    ContentView()
+    RouterView(router: Router())
 }

@@ -1,6 +1,5 @@
 final class StorageManager {
-    static let shared = StorageManager()
-
+    
     func saveTriggers(_ triggers: [Trigger]) {}
     func loadTriggers() -> [Trigger] { [] }
 

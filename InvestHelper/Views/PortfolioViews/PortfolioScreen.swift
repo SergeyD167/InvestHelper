@@ -24,5 +24,5 @@ struct PortfolioScreen: View {
 }
 
 #Preview {
-    ContentView()
+    RouterView(router: Router())
 }
