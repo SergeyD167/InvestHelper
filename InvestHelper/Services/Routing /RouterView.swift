@@ -21,9 +21,9 @@ struct RouterView: View {
                     case .settings:
                         SettingsScreen()
                     case .triggers:
-                        TriggersScreen()
-                    case .triggersAdd:
                         TriggersListScreen()
+                    case .createTrigger:
+                        CreateTriggerScreen()
                     }
                     
                 }

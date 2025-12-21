@@ -30,7 +30,7 @@
 		65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E822EB3DE1B003EB629 /* RouterView.swift */; };
 		65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E842EB3DE2C003EB629 /* AppRoute.swift */; };
 		65F13E892EB3E045003EB629 /* PortfolioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E882EB3E045003EB629 /* PortfolioScreen.swift */; };
-		65F13E8C2EB3E299003EB629 /* TriggersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */; };
+		65F13E8C2EB3E299003EB629 /* CreateTriggerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8B2EB3E299003EB629 /* CreateTriggerScreen.swift */; };
 		65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		65F13E822EB3DE1B003EB629 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		65F13E842EB3DE2C003EB629 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		65F13E882EB3E045003EB629 /* PortfolioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioScreen.swift; sourceTree = "<group>"; };
-		65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggersScreen.swift; sourceTree = "<group>"; };
+		65F13E8B2EB3E299003EB629 /* CreateTriggerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerScreen.swift; sourceTree = "<group>"; };
 		65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +162,6 @@
 		65F13E6D2EB3D8B2003EB629 /* InvestHelper */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E582EB3D8A7003EB629 /* Products */,
 				65F13E6C2EB3D8B2003EB629 /* InvestHelperApp.swift */,
 				65F13E6B2EB3D8B2003EB629 /* ContentView.swift */,
 				65F13E7F2EB3DC13003EB629 /* Views */,
@@ -171,6 +170,7 @@
 				65F13E7A2EB3DBED003EB629 /* Services */,
 				65ECC3892EF754F400F75278 /* Protocols */,
 				65F13E722EB3DB80003EB629 /* Resources */,
+				65F13E582EB3D8A7003EB629 /* Products */,
 				65F13E692EB3D8B2003EB629 /* Preview Content */,
 			);
 			path = InvestHelper;
@@ -226,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
-				65F13E8A2EB3E287003EB629 /* TriggersViews */,
+				65F13E8A2EB3E287003EB629 /* CreateTriggerViews */,
 				65ED74562EB6965400336086 /* TriggersListView */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
 			);
@@ -251,12 +251,12 @@
 			path = PortfolioViews;
 			sourceTree = "<group>";
 		};
-		65F13E8A2EB3E287003EB629 /* TriggersViews */ = {
+		65F13E8A2EB3E287003EB629 /* CreateTriggerViews */ = {
 			isa = PBXGroup;
 			children = (
-				65F13E8B2EB3E299003EB629 /* TriggersScreen.swift */,
+				65F13E8B2EB3E299003EB629 /* CreateTriggerScreen.swift */,
 			);
-			path = TriggersViews;
+			path = CreateTriggerViews;
 			sourceTree = "<group>";
 		};
 		65F13E8F2EB3E2CA003EB629 /* SettingsViews */ = {
@@ -363,7 +363,7 @@
 				65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */,
 				65ECC3852EF7546F00F75278 /* TriggerEvaluator.swift in Sources */,
 				65ECC3872EF7548E00F75278 /* TriggerManager.swift in Sources */,
-				65F13E8C2EB3E299003EB629 /* TriggersScreen.swift in Sources */,
+				65F13E8C2EB3E299003EB629 /* CreateTriggerScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
