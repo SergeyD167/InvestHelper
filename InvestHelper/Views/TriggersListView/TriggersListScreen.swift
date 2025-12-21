@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TriggersListScreen: View {
-    @Environment(Router.self) private var router
+    let router: Router
 
     var body: some View {
         ZStack {
@@ -38,5 +38,5 @@ struct TriggersListScreen: View {
 }
 
 #Preview {
-    RouterView(router: Router())
+    TriggersListScreen(router: Router())
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreateTriggerScreen: View {
-    @Environment(Router.self) private var router
+    let router: Router
 
     var body: some View {
         VStack {
@@ -23,5 +23,5 @@ struct CreateTriggerScreen: View {
 }
 
 #Preview {
-    RouterView(router: Router())
+    CreateTriggerScreen(router: Router())
 }

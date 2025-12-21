@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsScreen: View {
-    @Environment(Router.self) private var router
+    let router: Router
     
     var body: some View {
         VStack(spacing: 20) {
@@ -21,5 +21,5 @@ struct SettingsScreen: View {
 }
 
 #Preview {
-    RouterView(router: Router())
+    SettingsScreen(router: Router())
 }

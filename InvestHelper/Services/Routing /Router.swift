@@ -2,6 +2,7 @@ import Observation
 
 @Observable
 final class Router {
+    
     var path: [AppRoute] = []
 
     func push(_ route: AppRoute) { path.append(route) }

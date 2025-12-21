@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PortfolioScreen: View {
-    @Environment(Router.self) private var router
+    let router: Router
 
     var body: some View {
         VStack(spacing: 20) {
@@ -24,5 +24,5 @@ struct PortfolioScreen: View {
 }
 
 #Preview {
-    RouterView(router: Router())
+    PortfolioScreen(router: Router())
 }
