@@ -1,14 +1,8 @@
-//
-//  TriggersListScreen.swift
-//  InvestHelper
-//
-//  Created by Сергей Дятлов on 01.11.2025.
-//
-
 import SwiftUI
 
 struct TriggersListScreen: View {
     let router: Router
+    @Bindable var viewModel: TriggerListViewModel
 
     var body: some View {
         ZStack {
@@ -30,6 +24,9 @@ struct TriggersListScreen: View {
             }
             VStack {
                 Text("Triggers").font(.largeTitle)
+                List(viewModel.triggers) { trigger in
+                    Text(trigger.actionDescription)
+                }
                 Spacer()
             }
         }
@@ -38,5 +35,5 @@ struct TriggersListScreen: View {
 }
 
 #Preview {
-    TriggersListScreen(router: Router())
+    TriggersListScreen(router: Router(), viewModel: TriggerListViewModel(triggerManager: TriggerManager(storage: StorageManager())))
 }

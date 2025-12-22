@@ -1,10 +1,3 @@
-//
-//  SettingsView.swift
-//  InvestHelper
-//
-//  Created by Сергей Дятлов on 30.10.2025.
-//
-
 import SwiftUI
 
 struct SettingsScreen: View {
@@ -17,6 +10,7 @@ struct SettingsScreen: View {
                 router.pop()
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

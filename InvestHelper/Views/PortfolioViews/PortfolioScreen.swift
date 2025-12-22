@@ -1,10 +1,3 @@
-//
-//  PortfolioView.swift
-//  InvestHelper
-//
-//  Created by Сергей Дятлов on 30.10.2025.
-//
-
 import SwiftUI
 
 struct PortfolioScreen: View {
@@ -20,6 +13,7 @@ struct PortfolioScreen: View {
                 router.push(.triggers)
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
+		654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
 		65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3772EF7506F00F75278 /* CryptoToken.swift */; };
 		65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3792EF7508000F75278 /* InvestmentRecord.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerViewModel.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		65ECC3772EF7506F00F75278 /* CryptoToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToken.swift; sourceTree = "<group>"; };
 		65ECC3792EF7508000F75278 /* InvestmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRecord.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				65ECC3932EF7565400F75278 /* TriggerListViewModel.swift */,
+				654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				65F13E832EB3DE1B003EB629 /* RouterView.swift in Sources */,
 				65F13E852EB3DE2C003EB629 /* AppRoute.swift in Sources */,
 				65ED74582EB6967F00336086 /* TriggersListScreen.swift in Sources */,
+				654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */,
 				65ECC3822EF753BE00F75278 /* DataProvider.swift in Sources */,
 				65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */,
 				65ECC38B2EF7550B00F75278 /* DataProviderProtocol.swift in Sources */,
