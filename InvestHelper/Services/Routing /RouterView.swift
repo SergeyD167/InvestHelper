@@ -7,7 +7,7 @@ struct RouterView: View {
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            PortfolioScreen(router: router)
+            DashboardScreen(router: router, viewModel: DashboardViewModel())
                 .navigationDestination(for: AppRoute.self) { route in
                     switch route {
                     case .portfolio: PortfolioScreen(router: router)

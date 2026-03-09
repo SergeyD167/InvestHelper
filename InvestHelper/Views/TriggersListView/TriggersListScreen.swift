@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct TriggersListScreen: View {
+    
     let router: Router
     @Bindable var viewModel: TriggerListViewModel
 

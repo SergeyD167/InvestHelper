@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		650BCE932F5F38350056DCBF /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE922F5F38350056DCBF /* DashboardScreen.swift */; };
 		650BCE952F5F38570056DCBF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE942F5F38540056DCBF /* DashboardViewModel.swift */; };
+		650BCE972F5F40D00056DCBF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE962F5F40D00056DCBF /* APIService.swift */; };
 		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
 		654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		650BCE922F5F38350056DCBF /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		650BCE942F5F38540056DCBF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		650BCE962F5F40D00056DCBF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerViewModel.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		6506253E2EB3F6F4001C617C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				650BCE962F5F40D00056DCBF /* APIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				65ED74572EB6967F00336086 /* TriggersListScreen.swift */,
+				65F13E8A2EB3E287003EB629 /* CreateTriggerViews */,
 			);
 			path = TriggersListView;
 			sourceTree = "<group>";
@@ -242,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
-				65F13E8A2EB3E287003EB629 /* CreateTriggerViews */,
 				65ED74562EB6965400336086 /* TriggersListView */,
 				650BCE912F5F37EE0056DCBF /* DashboardViews */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
@@ -379,6 +382,7 @@
 				65ECC3822EF753BE00F75278 /* DataProvider.swift in Sources */,
 				65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */,
 				65ECC38B2EF7550B00F75278 /* DataProviderProtocol.swift in Sources */,
+				650BCE972F5F40D00056DCBF /* APIService.swift in Sources */,
 				65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */,
 				65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */,
 				65ECC3852EF7546F00F75278 /* TriggerEvaluator.swift in Sources */,

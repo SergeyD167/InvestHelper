@@ -14,6 +14,15 @@ struct DashboardScreen: View {
     
     var body: some View {
         Text("Dashboard")
+        Button("Go to Settings") {
+            router.push(.settings)
+        }
+        Button("Go to Triggers") {
+            router.push(.triggers)
+        }
+        Button("Go to Portfolio") {
+            router.push(.portfolio)
+        }
     }
 }
 

@@ -6,12 +6,10 @@ struct PortfolioScreen: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Portfolio").font(.largeTitle)
-            Button("Go to Settings") {
-                router.push(.settings)
+            Button("Back") {
+                router.pop()
             }
-            Button("Go to Triggers") {
-                router.push(.triggers)
-            }
+
         }
         .navigationBarHidden(true)
     }
