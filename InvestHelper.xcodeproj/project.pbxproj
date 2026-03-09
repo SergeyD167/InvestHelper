@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650BCE932F5F38350056DCBF /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE922F5F38350056DCBF /* DashboardScreen.swift */; };
+		650BCE952F5F38570056DCBF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE942F5F38540056DCBF /* DashboardViewModel.swift */; };
 		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
 		654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650BCE922F5F38350056DCBF /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
+		650BCE942F5F38540056DCBF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerViewModel.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		650BCE912F5F37EE0056DCBF /* DashboardViews */ = {
+			isa = PBXGroup;
+			children = (
+				650BCE922F5F38350056DCBF /* DashboardScreen.swift */,
+			);
+			path = DashboardViews;
 			sourceTree = "<group>";
 		};
 		65ECC37C2EF750B800F75278 /* Managers */ = {
@@ -221,6 +233,7 @@
 			children = (
 				65ECC3932EF7565400F75278 /* TriggerListViewModel.swift */,
 				654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */,
+				650BCE942F5F38540056DCBF /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +244,7 @@
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
 				65F13E8A2EB3E287003EB629 /* CreateTriggerViews */,
 				65ED74562EB6965400336086 /* TriggersListView */,
+				650BCE912F5F37EE0056DCBF /* DashboardViews */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
 			);
 			path = Views;
@@ -351,8 +365,10 @@
 				65F13E8E2EB3E2C6003EB629 /* SettingsScreen.swift in Sources */,
 				65F13E792EB3DBD9003EB629 /* Keys.swift in Sources */,
 				65F13E712EB3D8B2003EB629 /* InvestHelperApp.swift in Sources */,
+				650BCE952F5F38570056DCBF /* DashboardViewModel.swift in Sources */,
 				65ECC3962EF756EC00F75278 /* MockDataProvider.swift in Sources */,
 				65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */,
+				650BCE932F5F38350056DCBF /* DashboardScreen.swift in Sources */,
 				65ECC3942EF7565700F75278 /* TriggerListViewModel.swift in Sources */,
 				65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */,
 				65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */,

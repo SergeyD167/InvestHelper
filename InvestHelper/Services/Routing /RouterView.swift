@@ -16,6 +16,7 @@ struct RouterView: View {
                                                        viewModel: TriggerListViewModel(triggerManager: triggerManager))
                     case .createTrigger: CreateTriggerScreen(router: router,
                                                              viewModel: CreateTriggerViewModel(triggerManager: triggerManager))
+                    case .dashboard: DashboardScreen(router: router, viewModel: DashboardViewModel())
                     }
                 }
         }
