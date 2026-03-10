@@ -1,10 +1,3 @@
-//
-//  DashboardScreen.swift
-//  InvestHelper
-//
-//  Created by Сергей Дятлов on 09.03.2026.
-//
-
 import SwiftUI
 
 struct DashboardScreen: View {
@@ -23,9 +16,19 @@ struct DashboardScreen: View {
         Button("Go to Portfolio") {
             router.push(.portfolio)
         }
+        
+        VStack {
+            Text("Brent: \(viewModel.snapshot?.brent ?? 0)")
+            Text("USD/RUB: \(viewModel.snapshot?.usdRub ?? 0)")
+            Text("MOEX: \(viewModel.snapshot?.moex ?? 0)")
+            Text("Key Rate: \(viewModel.snapshot?.keyRate ?? 0)")
+        }
+        .task {
+            await viewModel.refresh()
+        }
     }
 }
 
 #Preview {
-    DashboardScreen(router: Router(), viewModel: DashboardViewModel())
+    DashboardScreen(router: Router(), viewModel: DashboardViewModel(api: APIService()))
 }

@@ -1,12 +1,10 @@
 import Foundation
 
-enum Metric {
-    case usdRub, keyRate, brent, imoex
+enum Metric: String, Codable {
+    case usdRub, keyRate, brent, imoex, btc
 }
 
-class APIService {
-    static let shared = APIService() //Singlton for testing, afther delete
-    private init() {}
+final class APIService: APIServiceProtocol {
     
     // MARK: - Public API
     func fetchMetrics(_ metrics: [Metric]) async -> [Metric: Double] {
@@ -20,6 +18,7 @@ class APIService {
                     case .keyRate: return (.keyRate, await self.fetchKeyRate())
                     case .brent: return (.brent, await self.fetchBrent())
                     case .imoex: return (.imoex, await self.fetchIMOEX())
+                    case .btc: return (.btc, await self.fetchBTC())
                     }
                 }
             }
@@ -30,6 +29,10 @@ class APIService {
         }
         
         return result
+    }
+    
+    func fetchAllMetrics() async -> [Metric: Double] {
+        return await fetchMetrics([.usdRub, .keyRate, .brent, .imoex, .btc])
     }
     
     // MARK: - Private helpers (async)
@@ -45,7 +48,11 @@ class APIService {
         } catch { return nil }
     }
     
-    func fetchBrent() async -> Double? {
+    private func fetchKeyRate() async -> Double? {
+        return 15.5
+    }
+    
+    private func fetchBrent() async -> Double? {
         
         let apiKey = "50c676a373968062739f0b70c49b74be550a2d7bfa38daadd6177e16b3eb4d2b"
         
@@ -102,6 +109,10 @@ class APIService {
             print("Ошибка загрузки IMOEX:", error)
             return nil
         }
+    }
+    
+    private func fetchBTC() async -> Double? {
+        0.0
     }
 }
 

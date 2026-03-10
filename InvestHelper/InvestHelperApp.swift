@@ -7,7 +7,7 @@ struct InvestHelperApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RouterView(router: container.router, triggerManager: container.triggerManager)
+            RouterView(router: container.router, triggerManager: container.triggerManager, api: container.apiservice)
         }
     }
 }

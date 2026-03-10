@@ -12,6 +12,7 @@
 		650BCE972F5F40D00056DCBF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE962F5F40D00056DCBF /* APIService.swift */; };
 		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
 		654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */; };
+		65D6C3B72F60AC86006E2B1D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6C3B62F60AC86006E2B1D /* APIServiceProtocol.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
 		65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3772EF7506F00F75278 /* CryptoToken.swift */; };
 		65ECC37A2EF7508100F75278 /* InvestmentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3792EF7508000F75278 /* InvestmentRecord.swift */; };
@@ -44,6 +45,7 @@
 		650BCE962F5F40D00056DCBF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerViewModel.swift; sourceTree = "<group>"; };
+		65D6C3B62F60AC86006E2B1D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		65ECC3772EF7506F00F75278 /* CryptoToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToken.swift; sourceTree = "<group>"; };
 		65ECC3792EF7508000F75278 /* InvestmentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRecord.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				65ECC38A2EF7550800F75278 /* DataProviderProtocol.swift */,
+				65D6C3B62F60AC86006E2B1D /* APIServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				650BCE952F5F38570056DCBF /* DashboardViewModel.swift in Sources */,
 				65ECC3962EF756EC00F75278 /* MockDataProvider.swift in Sources */,
 				65ECC38D2EF7556700F75278 /* CryptoManager.swift in Sources */,
+				65D6C3B72F60AC86006E2B1D /* APIServiceProtocol.swift in Sources */,
 				650BCE932F5F38350056DCBF /* DashboardScreen.swift in Sources */,
 				65ECC3942EF7565700F75278 /* TriggerListViewModel.swift in Sources */,
 				65ECC3912EF755AE00F75278 /* StorageManager.swift in Sources */,

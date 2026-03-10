@@ -5,7 +5,7 @@ final class MockDataProvider: DataProviderProtocol {
             usdRub: 92.1,
             moex: 3200,
             keyRate: 16.0,
-            cryptoPrices: [:]
+            btc: 120000.0
         )
     }
 

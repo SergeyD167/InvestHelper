@@ -4,10 +4,11 @@ struct RouterView: View {
 
     @Bindable var router: Router
     let triggerManager: TriggerManager
+    let api: APIServiceProtocol
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            DashboardScreen(router: router, viewModel: DashboardViewModel())
+            DashboardScreen(router: router, viewModel: DashboardViewModel(api: api))
                 .navigationDestination(for: AppRoute.self) { route in
                     switch route {
                     case .portfolio: PortfolioScreen(router: router)
@@ -16,7 +17,7 @@ struct RouterView: View {
                                                        viewModel: TriggerListViewModel(triggerManager: triggerManager))
                     case .createTrigger: CreateTriggerScreen(router: router,
                                                              viewModel: CreateTriggerViewModel(triggerManager: triggerManager))
-                    case .dashboard: DashboardScreen(router: router, viewModel: DashboardViewModel())
+                    case .dashboard: DashboardScreen(router: router, viewModel: DashboardViewModel(api: api))
                     }
                 }
         }

@@ -3,7 +3,7 @@ struct MarketSnapshot {
     let usdRub: Double?
     let moex: Double?
     let keyRate: Double?
-    let cryptoPrices: [String: Double]
+    let btc: Double?
     
     func value(for source: TriggerSource) -> Double? {
         switch source {
@@ -11,7 +11,7 @@ struct MarketSnapshot {
         case .usdRub: return usdRub
         case .moex: return moex
         case .keyRate: return keyRate
-        case .crypto: return nil
+        case .btc: return nil
         }
     }
 }

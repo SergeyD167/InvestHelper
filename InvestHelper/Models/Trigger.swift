@@ -21,7 +21,7 @@ enum TriggerSource: String, Codable {
     case usdRub
     case moex
     case keyRate
-    case crypto
+    case btc
 }
 
 enum TriggerSignalType: String, Codable {
