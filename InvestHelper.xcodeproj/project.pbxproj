@@ -12,6 +12,8 @@
 		650BCE972F5F40D00056DCBF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BCE962F5F40D00056DCBF /* APIService.swift */; };
 		654490302EF89A3E00954EE2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544902F2EF89A3E00954EE2 /* AppContainer.swift */; };
 		654490322EF8AB2F00954EE2 /* CreateTriggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */; };
+		657FC4B52F7EF95E0068ECDC /* DashboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FC4B42F7EF95E0068ECDC /* DashboardSettingsView.swift */; };
+		657FC4B72F7F00280068ECDC /* RootCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657FC4B62F7F00280068ECDC /* RootCarouselView.swift */; };
 		65D6C3B72F60AC86006E2B1D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D6C3B62F60AC86006E2B1D /* APIServiceProtocol.swift */; };
 		65ECC3732EF74FD600F75278 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3722EF74FD500F75278 /* Trigger.swift */; };
 		65ECC3782EF7507000F75278 /* CryptoToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECC3772EF7506F00F75278 /* CryptoToken.swift */; };
@@ -45,6 +47,8 @@
 		650BCE962F5F40D00056DCBF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		6544902F2EF89A3E00954EE2 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		654490312EF8AB2C00954EE2 /* CreateTriggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTriggerViewModel.swift; sourceTree = "<group>"; };
+		657FC4B42F7EF95E0068ECDC /* DashboardSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSettingsView.swift; sourceTree = "<group>"; };
+		657FC4B62F7F00280068ECDC /* RootCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCarouselView.swift; sourceTree = "<group>"; };
 		65D6C3B62F60AC86006E2B1D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		65ECC3722EF74FD500F75278 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		65ECC3772EF7506F00F75278 /* CryptoToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoToken.swift; sourceTree = "<group>"; };
@@ -96,9 +100,18 @@
 		650BCE912F5F37EE0056DCBF /* DashboardViews */ = {
 			isa = PBXGroup;
 			children = (
+				657FC4B32F7EF92B0068ECDC /* DashboardSettingsView */,
 				650BCE922F5F38350056DCBF /* DashboardScreen.swift */,
 			);
 			path = DashboardViews;
+			sourceTree = "<group>";
+		};
+		657FC4B32F7EF92B0068ECDC /* DashboardSettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				657FC4B42F7EF95E0068ECDC /* DashboardSettingsView.swift */,
+			);
+			path = DashboardSettingsView;
 			sourceTree = "<group>";
 		};
 		65ECC37C2EF750B800F75278 /* Managers */ = {
@@ -250,7 +263,6 @@
 			children = (
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
 				65ED74562EB6965400336086 /* TriggersListView */,
-				650BCE912F5F37EE0056DCBF /* DashboardViews */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
 			);
 			path = Views;
@@ -262,6 +274,7 @@
 				65F13E802EB3DC37003EB629 /* Router.swift */,
 				65F13E842EB3DE2C003EB629 /* AppRoute.swift */,
 				65F13E822EB3DE1B003EB629 /* RouterView.swift */,
+				657FC4B62F7F00280068ECDC /* RootCarouselView.swift */,
 			);
 			path = "Routing ";
 			sourceTree = "<group>";
@@ -286,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */,
+				650BCE912F5F37EE0056DCBF /* DashboardViews */,
 			);
 			path = SettingsViews;
 			sourceTree = "<group>";
@@ -391,6 +405,8 @@
 				65ECC38F2EF7559900F75278 /* NotificationManager.swift in Sources */,
 				65ECC3852EF7546F00F75278 /* TriggerEvaluator.swift in Sources */,
 				65ECC3872EF7548E00F75278 /* TriggerManager.swift in Sources */,
+				657FC4B52F7EF95E0068ECDC /* DashboardSettingsView.swift in Sources */,
+				657FC4B72F7F00280068ECDC /* RootCarouselView.swift in Sources */,
 				65F13E8C2EB3E299003EB629 /* CreateTriggerScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
