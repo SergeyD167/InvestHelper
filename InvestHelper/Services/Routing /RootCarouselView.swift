@@ -12,21 +12,18 @@ struct RootCarouselView: View {
         TabView(selection: $selection) {
             
             PortfolioScreen(router: router)
-                .padding(.horizontal, 20)
                 .tag(0)
             
             DashboardScreen(
                 router: router,
                 viewModel: DashboardViewModel(api: api)
             )
-            .padding(.horizontal, 20)
             .tag(1)
             
             TriggersListScreen(
                 router: router,
                 viewModel: TriggerListViewModel(triggerManager: triggerManager)
             )
-            .padding(.horizontal, 20)
             .tag(2)
         }
         .tabViewStyle(.page(indexDisplayMode: .never))

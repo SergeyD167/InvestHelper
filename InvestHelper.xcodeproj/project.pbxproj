@@ -100,7 +100,6 @@
 		650BCE912F5F37EE0056DCBF /* DashboardViews */ = {
 			isa = PBXGroup;
 			children = (
-				657FC4B32F7EF92B0068ECDC /* DashboardSettingsView */,
 				650BCE922F5F38350056DCBF /* DashboardScreen.swift */,
 			);
 			path = DashboardViews;
@@ -264,6 +263,7 @@
 				65F13E872EB3E00E003EB629 /* PortfolioViews */,
 				65ED74562EB6965400336086 /* TriggersListView */,
 				65F13E8F2EB3E2CA003EB629 /* SettingsViews */,
+				650BCE912F5F37EE0056DCBF /* DashboardViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				65F13E8D2EB3E2C6003EB629 /* SettingsScreen.swift */,
-				650BCE912F5F37EE0056DCBF /* DashboardViews */,
+				657FC4B32F7EF92B0068ECDC /* DashboardSettingsView */,
 			);
 			path = SettingsViews;
 			sourceTree = "<group>";

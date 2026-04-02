@@ -6,26 +6,71 @@ struct DashboardScreen: View {
     @Bindable var viewModel: DashboardViewModel
     
     var body: some View {
-        Text("Dashboard")
-        Button("Go to Settings") {
-            router.push(.settings)
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 16) {
+                    
+                    header
+                    
+                    VStack(spacing: 12) {
+                        metricCard(title: "Brent", value: viewModel.snapshot?.brent)
+                        metricCard(title: "USD/RUB", value: viewModel.snapshot?.usdRub)
+                        metricCard(title: "MOEX", value: viewModel.snapshot?.moex)
+                        metricCard(title: "Key Rate", value: viewModel.snapshot?.keyRate)
+                    }
+                }
+                .padding()
+                .refreshable {
+                    await viewModel.refresh()
+                }
+            }
+            .navigationTitle("Dashboard")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        router.push(.settings)
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                }
+            }
+            .task {
+                await viewModel.refresh()
+            }
         }
-        Button("Go to Triggers") {
-            router.push(.triggers)
+    }
+    
+    private var header: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Market Overview")
+                    .font(.title2)
+                    .bold()
+                
+                Text("Live data snapshot")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            
+            Spacer()
         }
-        Button("Go to Portfolio") {
-            router.push(.portfolio)
+    }
+
+    private func metricCard(title: String, value: Double?) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            
+            Text(title)
+                .font(.headline)
+            
+            Text(value.map { String(format: "%.2f", $0) } ?? "—")
+                .font(.title3)
+                .bold()
+            
         }
-        
-        VStack {
-            Text("Brent: \(viewModel.snapshot?.brent ?? 0)")
-            Text("USD/RUB: \(viewModel.snapshot?.usdRub ?? 0)")
-            Text("MOEX: \(viewModel.snapshot?.moex ?? 0)")
-            Text("Key Rate: \(viewModel.snapshot?.keyRate ?? 0)")
-        }
-        .task {
-            await viewModel.refresh()
-        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(.thinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }
 
